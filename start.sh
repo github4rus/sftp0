@@ -9,4 +9,4 @@ if ! [ -d "/etc/ssh/moduli" ]; then cp /etc/bak.ssh/moduli /etc/ssh/; fi
 
 PASS=${PASS:-p@zzw0rd}
 (echo ${PASS};echo ${PASS}) | passwd
-/usr/sbin/sshd -D
+/usr/sbin/sshd -D -d -e
