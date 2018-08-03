@@ -6,7 +6,7 @@ sftp0 is a sftp server with root user access.
 
 # usage:
 ```sh
-docker run -d --name sftp0 -e <rootpassword> \
+docker run -d --name sftp0 -e PASS=<rootpassword> \
 -v /shared/folder:/data/share \
 -p 20002:22 dockerapp/sftp0
 ```
